@@ -4,6 +4,7 @@ from openai.types.chat import ChatCompletionSystemMessageParam, ChatCompletionUs
     ChatCompletionFunctionMessageParam
 from openai.types.chat.completion_create_params import Function as ChatCompletionFunction
 from pydantic import BaseModel, Field
+from openai_key import key
 
 OpenAIMessageType = (ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam |
                      ChatCompletionAssistantMessageParam | ChatCompletionToolMessageParam |
@@ -13,6 +14,7 @@ OpenAIMessageType = (ChatCompletionSystemMessageParam | ChatCompletionUserMessag
 client = OpenAI(
     # Defaults to os.environ.get("OPENAI_API_KEY")
     # Otherwise use: api_key="Your_API_Key",
+    api_key = key
 )
 
 class SarcasmDetection(BaseModel):
