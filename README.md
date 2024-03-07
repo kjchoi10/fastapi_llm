@@ -1,5 +1,5 @@
 # fastapi_llm
-Practicing fastapi llm implementation:
+Practicing fastapi llm implementation using a custom LLM that uses ChatGPT 3.5. Important note, this application depends on version Python 3.10 or above.
 
 # Summary and Description:
 This script defines a simple web application using FastAPI, a modern, fast web framework for building APIs with Python 3.7+ that's based on standard Python type hints. The script is structured to serve both a simple HTML-based chat interface and to handle asynchronous server-sent events (SSE) for real-time communication between the client and server. Here's a breakdown of its functionality:
